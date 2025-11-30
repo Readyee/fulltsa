@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookQuest - Recipes</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=18">
+    
+  </head>
+  <body>
+    <header>
+    
+      <div class="row">
+      
+        <div class="logo">
+          <a href="../index.html"><img src="../img/logo.png" alt="CookQuest Logo" /></a>
+          <div id="xp">
+            EXP: <span id="xp-value"></span>
+          </div>
+        </div>
+        
+        <div class="search" id="search" tabindex="-1">
+          <div id="input"></div>
+          <input type="search" id="find" placeholder="Search for a word...">
+        </div>
+        
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+	      <li><a href="index.html">Recipes</a></li>
+	      <li><a href="../about/index.html">About</a></li>
+        </ul>
+      </nav>
+     
+    </header>
+        
+    <hr>
+    <main>
+       
+      <section class="result-find-recipes">
+        <form id="filter-form" action="index.html" method="get">
+          <div class="filters row">
+          	<div class="column">
+              <label for="level">Level</label>
+              <select id="level" name="level">
+                <option value="">Any Level</option>
+                <option value="1">Level 1: Easy</option>
+                <option value="2">Level 2: Medium</option>
+                <option value="3">Level 3: Hard</option>
+              </select>
+            </div>
+            <div class="column">
+              <label>Category</label>
+              <select id="category" name="cat">
+                <option value="">Any Category</option>
+                <option value="1">Breakfast</option>
+                <option value="2">Lunch</option>
+                <option value="3">Dinner</option>
+                <option value="4">Dessert</option>
+              </select>
+            </div>
+            <div class="column">
+              <label>Time</label>
+              <select id="time" name="time"> 
+                <option value="">Any Time</option>
+                <option value="15">&lt; 15 min</option>
+                <option value="30">&lt; 30 min</option>
+                <option value="45">&lt; 45 min</option>
+                <option value="60">&lt; 60 min</option>
+              </select>
+            </div>
+          
+            <div class="column button">
+              <button type="submit">GO!</button>
+            </div>
+          </div>
+        </form>   
+      </section>
+      
+      <section class="recipes">
+        <div id="nav">
+          <p>Recipes</p>
+        </div>
+        <div id="chip">
+          <div id="content">
+            <!-- lol thats me (github guy) -->
+            <!--it will be loadded here :D -->
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+		<ul>
+			<li><a href="../about/index.html#documentation">TSA Documentation</a></li>
+			<li><a href="../about/index.html#documentation">References</a></li>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfQPDfdBefhe5fqhEuBno5il1Gg_qyzgG6waQdayh4UkuO7nw/viewform?usp=dialog">Recipe Add Form</a></li>
+		</ul>
+	</footer>
+	
+    <script src="../script.js?v=18"></script>
+    <script src="script.js?v=18"></script>
+  </body>
+</html>
+<!-- i made most of this page -->

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookQuest</title>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=18">
+</head>
+<body id="home">
+    <header>
+    
+      <div class="row">
+        
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="CookQuest Logo" /></a><div id="xp">
+            EXP: <span id="xp-value"></span>
+          </div>
+        </div>
+        
+        <div class="search" id="search" tabindex="-1">
+          <div id="input"></div>
+          <input type="search" id="find" placeholder="Search for a word...">
+        
+        </div>
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+	      <li><a href="result/index.html">Recipes</a></li>
+	      <li><a href="about/index.html">About</a></li>
+        </ul>
+      </nav>
+     
+    </header>
+   
+    <hr>
+    <main>
+
+
+      <section class="featured-recipes">
+      	<div class="section-header">
+      	  <h2>Featured Recipes</h2>
+          <p>Recommended Side Quests</p>
+        </div>
+        <div class="recipe-images">
+          <figure><a><img src="" alt="Random Recipe 1"></a><figcaption></figcaption></figure>
+          <figure><a><img src="" alt="Random Recipe 2"></a><figcaption></figcaption></figure>
+          <figure><a><img src="" alt="Random Recipe 3"></a><figcaption></figcaption></figure>
+        </div>
+      </section>
+
+	  <section class="find-recipes">
+        <form id="filter-form" action="result/index.html" method="get">
+          <div class="section-header">
+            <h2>Find Recipes</h2>
+            <p>Find recipes that match your requirements</p>
+          </div>
+          <div class="filters row">
+          	<div class="column">
+              <label for="level">Level</label>
+              <select id="level" name="level">
+                <option value="">Any Level</option>
+                <option value="1">Level 1: Easy</option>
+                <option value="2">Level 2: Medium</option>
+                <option value="3">Level 3: Hard</option>
+              </select>
+            </div>
+            <div class="column">
+              <label>Category</label>
+              <select id="category" name="cat">
+                <option value="">Any Category</option>
+                <option value="1">Breakfast</option>
+                <option value="2">Lunch</option>
+                <option value="3">Dinner</option>
+                <option value="4">Dessert</option>
+              </select>
+            </div>
+            <div class="column">
+              <label>Time</label>
+              <select id="time" name="time"> 
+                <option value="">Any Time</option>
+                <option value="15">&lt; 15 min</option>
+                <option value="30">&lt; 30 min</option>
+                <option value="45">&lt; 45 min</option>
+                <option value="60">&lt; 60 min</option>
+              </select>
+            </div>
+          </div>
+          <div class="button">
+            <button type="submit">Find Recipes</button>
+          </div>
+        </form>
+      </section>
+      
+
+      <section class="level-descriptions">
+        <div class="section-header">
+          <h2>Skill Levels</h2>
+          <p>CookQuest Levels Explained</p>
+        </div>
+        <div class="levels row">
+          <div class="level column">
+            <div class="levelnumber">
+              <h3>Level <span class="number">1</span></h3>
+            </div>
+            <p>Can boil water. Has a basic kitchen. Makes a bit of a mess.</p>
+          </div>
+            <div class="level column">
+            <div class="levelnumber">
+              <h3>Level <span class="number">2</span></h3>
+            </div>
+            <p>Can follow a recipe. Sometimes makes mistakes, but usually nails the result.</p>
+          </div>
+          <div class="level column">
+            <div class="levelnumber">
+            <h3>Level <span class="number">3</span></h3>
+            </div>
+            <p>Uses advanced techniques. Can improvise and is successful with complex recipes.</p>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+	<footer>
+		<ul>
+			<li><a href="about/index.html#documentation">TSA Documentation</a></li>
+			<li><a href="about/index.html#documentation">References</a></li>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfQPDfdBefhe5fqhEuBno5il1Gg_qyzgG6waQdayh4UkuO7nw/viewform?usp=dialog">Recipe Add Form</a></li>
+		</ul>
+	</footer>
+  <script src="script.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>

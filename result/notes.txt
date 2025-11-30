@@ -1,0 +1,7 @@
+i tryed to add notes in the data.json but it broke so here it is in here
+
+/* 
+whatcha expect i did all of this no lol
+this is a data from a exelsheet
+then from a google form into exel to json though exporting
+ */
